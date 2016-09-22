@@ -15,6 +15,8 @@
 		6A3B50DE1D9274AF00690866 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A3B50DC1D9274AF00690866 /* LaunchScreen.storyboard */; };
 		6A3B50E91D9274AF00690866 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B50E81D9274AF00690866 /* _____Tests.m */; };
 		6A3B50F41D9274AF00690866 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B50F31D9274AF00690866 /* _____UITests.m */; };
+		6A3B51041D9274C500690866 /* BSCircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3B51031D9274C500690866 /* BSCircleProgressView.m */; };
+		6A830A7E1D93A54700388DD5 /* BSRingProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A830A7D1D93A54700388DD5 /* BSRingProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		6A3B50EF1D9274AF00690866 /* 圆圈进度条UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "圆圈进度条UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A3B50F31D9274AF00690866 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		6A3B50F51D9274AF00690866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A3B51021D9274C500690866 /* BSCircleProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSCircleProgressView.h; sourceTree = "<group>"; };
+		6A3B51031D9274C500690866 /* BSCircleProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSCircleProgressView.m; sourceTree = "<group>"; };
+		6A830A7C1D93A54700388DD5 /* BSRingProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSRingProgressView.h; sourceTree = "<group>"; };
+		6A830A7D1D93A54700388DD5 /* BSRingProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSRingProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		6A3B50C21D9274AF00690866 = {
 			isa = PBXGroup;
 			children = (
+				6A3B51011D9274C500690866 /* progressView */,
 				6A3B50CD1D9274AF00690866 /* 圆圈进度条 */,
 				6A3B50E71D9274AF00690866 /* 圆圈进度条Tests */,
 				6A3B50F21D9274AF00690866 /* 圆圈进度条UITests */,
@@ -138,6 +145,17 @@
 				6A3B50F51D9274AF00690866 /* Info.plist */,
 			);
 			path = "圆圈进度条UITests";
+			sourceTree = "<group>";
+		};
+		6A3B51011D9274C500690866 /* progressView */ = {
+			isa = PBXGroup;
+			children = (
+				6A3B51021D9274C500690866 /* BSCircleProgressView.h */,
+				6A3B51031D9274C500690866 /* BSCircleProgressView.m */,
+				6A830A7C1D93A54700388DD5 /* BSRingProgressView.h */,
+				6A830A7D1D93A54700388DD5 /* BSRingProgressView.m */,
+			);
+			path = progressView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +289,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A3B50D61D9274AF00690866 /* ViewController.m in Sources */,
+				6A830A7E1D93A54700388DD5 /* BSRingProgressView.m in Sources */,
+				6A3B51041D9274C500690866 /* BSCircleProgressView.m in Sources */,
 				6A3B50D31D9274AF00690866 /* AppDelegate.m in Sources */,
 				6A3B50D01D9274AF00690866 /* main.m in Sources */,
 			);
@@ -496,6 +516,7 @@
 				6A3B50FA1D9274AF00690866 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A3B50FB1D9274AF00690866 /* Build configuration list for PBXNativeTarget "圆圈进度条Tests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +525,7 @@
 				6A3B50FD1D9274AF00690866 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A3B50FE1D9274AF00690866 /* Build configuration list for PBXNativeTarget "圆圈进度条UITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +534,7 @@
 				6A3B51001D9274AF00690866 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
